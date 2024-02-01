@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+@font-face {
+  src: url("./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf");
+  font-family: "outfit";
+}
+
+body {
+  margin: 0;
+  font-family: "outfit", sans-serif;
+  background-color: var(--light-gray);
+}
+
+main {
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 25px;
+  max-width: 450px;
+  /* 1st arg = offset-x-axis, 2nd = offset-y-axis , 3rd = blur, 4th = color */
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.05);
+}
+
+.container:hover {
+  box-shadow: none;
+}
+
+.qr-code {
+  border-radius: 18px;
+  width: 100%;
+}
+
+.title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark-blue);
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.description {
+  color: var(--grayish-blue);
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.text-wrapper {
+  margin: 0 1rem 0 1rem;
+}
