@@ -35,6 +35,7 @@ main {
   max-width: 450px;
   /* 1st arg = offset-x-axis, 2nd = offset-y-axis , 3rd = blur, 4th = color */
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.05);
+  margin: 2rem 1rem;
 }
 
 .container:hover {
